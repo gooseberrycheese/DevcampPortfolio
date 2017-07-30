@@ -19,12 +19,12 @@
         <div class="cover-container">
 
           <%= video_tag(
-              'Coloured_Pencil_1_Videvo.mp4',
+              'HardDrivePhotojpeg.mp4',
               id: 'background',
               autoplay: true,
               loop: true,
               muted: true,
-              poster: 'home_bg.jpg'
+              poster: 'home_bg.png'
             )
             %>
 
@@ -33,8 +33,8 @@
           <%= yield %>
 
           <%= render "shared/application_footer" %>
-          
-          <%= render "shared/alerts" %> 
+
+          <%= alerts %>
 
           <%= source_helper("application") %>
 
